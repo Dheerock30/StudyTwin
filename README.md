@@ -1,33 +1,32 @@
-# StudyTwin
-A data-driven, rule-based learning analytics system designed to act as a digital twin for student study patterns. Built for the RECURSION 2.0 Hackathon, StudyTwin replaces generic study planners by analyzing individual learning behaviors, tracking quiz performance, and automatically identifying weak topics to optimize revision time.
+cat << 'EOF' > README.md
+# StudyTwin 🧠⚡
 
-🚀 Features
-Personalized Learning Profile: Aggregates study hours, focus ratings, and test scores to establish a dynamic digital footprint of student progress.
+> *Stop using one-size-fits-all timetables. Meet your digital learning twin.*
 
-Automated Weak-Area Detection: Analyzes quiz performance via Python and SQL queries to pinpoint specific topics needing urgent revision.
+Built for **RECURSION 2.0** by the Microsoft Innovation Club at VIT Chennai, **StudyTwin** is a data-driven learning analytics platform. Unlike traditional study planners that merely track hours or display static test scores, StudyTwin acts as a dynamic behavioral mirror—continuously analyzing your study patterns, quiz performances, mistakes, and revision frequencies to identify hidden knowledge gaps and optimize your prep time.
 
-Smart Recommendations: Generates targeted, actionable study insights based on performance gaps rather than rigid, one-size-fits-all schedules.
+---
 
-Interactive Dashboard: Built with Streamlit for a clean, responsive UI requiring zero frontend overhead.
+## 💡 The Problem
+Students frequently struggle to pinpoint their actual weak areas, fall into ineffective study habits, and waste limited time reviewing topics they've already mastered. Existing apps offer generic schedules that fail to adapt to an individual's actual learning curve.
 
-🛠️ Tech Stack
-Backend & Logic: Python
+## 🚀 The Solution
+StudyTwin builds a digital twin of a student's learning profile to drive intelligent, adaptive outcomes:
+* **Continuous Behavioral Tracking:** Logs study time, topic focus, and quiz scores.
+* **Automated Gap Identification:** Filters performance metrics to flag struggling topics before exams.
+* **Targeted Recommendations:** Generates actionable study and revision triggers based on real data instead of guesswork.
 
-Database: SQLite / SQL
+---
 
-Interface: Streamlit
+## 🛠️ Tech Stack
 
-⚙️ Quick Start
-Clone the repository:
+* **Core Language:** Python
+* **Database & Queries:** SQLite / SQL
+* **Frontend Dashboard:** Streamlit 
 
-Bash
-git clone https://github.com/your-username/study-twin.git
-cd study-twin
-Install dependencies:
+---
 
-Bash
-pip install streamlit pandas
-Initialize the database and run the app:
+## 📊 Project Workflow
 
-Bash
-streamlit run app.py
+```text
+Student Activity & Quizzes  ➔  SQL Relational Database  ➔  Python Analytical Engine  ➔  Adaptive Recommendations  ➔  Streamlit Dashboard
